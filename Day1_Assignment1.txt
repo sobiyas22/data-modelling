@@ -1,0 +1,23 @@
+Use cases for different real world applications 
+
+
+1. HDFC, SBI, etc Banking
+   - Uses Relational databases i.e MySQl,etc to store user and other organisation related information in rows and columns format.
+   - USE:
+   	It uses relational DB because it makes it efficient for retrieving and processing large amounts of data. 
+   	Through the use of primary key and foreign key it ensures data integrity, also makes it easier for making it easier to handle complex data operations and analysiis.
+   	Can utilize ACID properties on data which is more imp in banking sector for payments,etc.
+   	
+2. Instagram -social media platform:
+   - uses NoSql type of database,
+   USE: 
+   - to provide more flexibility rather than strict format. E.g number of posts, likes or comments for individuals may vary.
+   - data may be in large volumes and distribution of data and speed for retrieving data may be large volumes.
+   - it maintains performance even when continuously data is updated.
+   
+  3. leaderboard in online betting games:
+  - uses in memory databases for high throughput, having low latency while processing
+   USE:
+   -processing is done faster,lets suppose of user's rank like sorting rank according to highest points at every instance.
+   - it updates data in real time with large number of users fast and efficiently
+
