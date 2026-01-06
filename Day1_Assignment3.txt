@@ -1,0 +1,17 @@
+Normalization is used to remove redundancies in the data and organise the data properly.
+It is used to eliminate anomalies from the data.
+
+If the database is not normalized it may lead to  redundancy, inconsistency, anomalies, etc and it is difficult to maintain the data due to poor integrity.
+
+question:
+
+Order_ID Customer_Name Products
+
+101  Rahul   Laptop, Mouse
+
+Answer:
+orderif customer_name products
+101 rahul laptop
+101 rahul mouse
+
+
