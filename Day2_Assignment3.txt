@@ -1,0 +1,17 @@
+SELECT * FROM bookings
+
+WHERE doctor_id = ?
+
+AND appointment_date >= ?
+
+AND appointment_date <= ?;
+
+Propose a composite index
+Explain column order choice.
+
+answer:
+-> composite index can be on doctor_id and appointment_date: 
+	 CREATE INDEX idx ON bookings (doctor_id, appointment_date);
+	 
+-> equality conditions comes first and then the range conditions. searching for doctor id first narrows down the search and then we can select for range of appointment dates secondly.
+
