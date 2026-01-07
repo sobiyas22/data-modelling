@@ -1,0 +1,16 @@
+Given the table:
+orders  id  user_id	status	created_at
+
+
+2. Suggest appropriate indexes
+ans:
+1. can create a primary key index on id 
+2. also an index on user_id
+3. index on status
+
+
+3. Explain why you chose them
+ans:
+1. chose id as an index to uniquely identify each record in the orders table.
+2. user_id is chosen to fetch data of the particular user using its id.
+3. can filter orders based on status of orders

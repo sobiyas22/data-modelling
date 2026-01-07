@@ -15,6 +15,7 @@ Use cases for different real world applications
    - data may be in large volumes and distribution of data and speed for retrieving data may be large volumes.
    - it maintains performance even when continuously data is updated.
    
+   
   3. leaderboard in online betting games:
   - uses in memory databases for high throughput, having low latency while processing
    USE:
