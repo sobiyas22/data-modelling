@@ -1,0 +1,21 @@
+
+Describe a real-world system where:
+
+1. Soft deletes are required
+
+2. Hard deletes are preferred
+
+
+1.Soft delete: 
+- soft deletes are used where data shouldn't be displayed on user's view i.e appear as deleted but it should be retained in the database.
+- soft deletes uses flags such as deleted or can use boolean values to manage display of that record in the table.
+real world use case:
+In social media platforms like Instagram and facebook if a user deletes an account, it is available for him to recover the account for a time period say 30 days.
+During that time account is not visible and shows an unavailable. When user comes back to retrieve their account the same user record can be taken from the flag set by database admin to recover the account.
+
+2. Hard delete:
+- hard deletes are implemented where we want to actually delete the record from the table and not only from user's view of table.
+- here, data is permanently lost from the table unless backup is available to recover the records.
+real world use case:
+In cases where data is unnecessary or irrelevant to the current info stored in the table, it is permanently deleted. Like the emails that are moved to trash.
+The user deletes unnecessary emails and for time being they are moved to trash(soft deleted) but after some time (mostly 30 days) the trash is cleared and trashed mails are permanently deleted from the bin. This is hard delete and is necessary for getting rid of unnecessary data.
