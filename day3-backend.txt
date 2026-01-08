@@ -1,0 +1,39 @@
+1. get request to https://jsonplaceholder.typicode.com/posts/1 or any other endpoint gives a response; i get the below response from the mentioned url
+response:
+{
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+
+2. after making a post request to https://jsonplaceholder.typicode.com/posts with a json body a new object was successfully created. with a response code of 201.
+
+3. i searched for amazon website url and opened the network tab. One endpoint that the amazon timely pinged was https://unagi.amazon.com/1/events/com.amazon.csm.csa.prod
+It's: 
+Request method :- POST
+Request headers:
+	accept-encoding
+	connection
+	content-length
+	content-type
+	cookie,etc specific to amazon's website.
+	
+Response headers: It contained below
+	access-control-allow-credentials
+	access-control-allow-origin
+	connection
+	content-encoding
+	content-length
+	content-type
+	
+	and more specific to amazon's requirement.
+	
+Body: No body for the response
+
+Description:
+Request headers from frontend are sent to the server that includes fields such as which type of encoding it takes, and sends a connect request to establish one., content length(size of content exchanged in calls), type of content whether in json, or other format or images,cookie is also for secured connection, in the response it sends the connection response and also type of encoding it uses for further calls, length of the content in response and type of content sent. It also includes additional fields such as which origins are allowed to access the server endpoints and the credentials also.
+
+In the request, when user first hits the url for amazon, a default page i.e dashboard is opened. and request is made to load and establish connection with the server, the headers specify the length of content exchange, type of content, and responds in same format as agreed upon. It also mentions encoding type of content and makes secure connection. The server responds with necessary info then.
+
+
